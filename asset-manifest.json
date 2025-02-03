@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.css": "/portfolio/static/css/main.40bd8fc5.css",
+    "main.js": "/portfolio/static/js/main.e486b580.js",
+    "static/js/787.1ed0c42c.chunk.js": "/portfolio/static/js/787.1ed0c42c.chunk.js",
+    "static/media/Tisa Sans Pro Light Italic.ttf": "/portfolio/static/media/Tisa Sans Pro Light Italic.b05edb7e61358c850fc8.ttf",
+    "static/media/Tisa Sans Pro Black.ttf": "/portfolio/static/media/Tisa Sans Pro Black.a1b1b93160aa91d8798c.ttf",
+    "static/media/Tisa Sans Pro Bold Italic.ttf": "/portfolio/static/media/Tisa Sans Pro Bold Italic.e97a576e20ed5e7914cc.ttf",
+    "static/media/Tisa Sans Pro Italic.ttf": "/portfolio/static/media/Tisa Sans Pro Italic.eaaf8a95515b5cf84545.ttf",
+    "static/media/Tisa Sans Pro ExtraBold Italic.ttf": "/portfolio/static/media/Tisa Sans Pro ExtraBold Italic.b2586a8de9760d0a528e.ttf",
+    "static/media/Tisa Sans Pro Medium Italic.ttf": "/portfolio/static/media/Tisa Sans Pro Medium Italic.c1a2631df62039f5697b.ttf",
+    "static/media/Tisa Sans Pro Bold.ttf": "/portfolio/static/media/Tisa Sans Pro Bold.bca222fcd1c93dd104b7.ttf",
+    "static/media/Tisa Sans Pro ExtraBold.ttf": "/portfolio/static/media/Tisa Sans Pro ExtraBold.375dc2dccae90fc83007.ttf",
+    "static/media/Tisa Sans Pro Black Italic.ttf": "/portfolio/static/media/Tisa Sans Pro Black Italic.34ab8302f67dbbbd389f.ttf",
+    "static/media/Tisa Sans Pro Medium.ttf": "/portfolio/static/media/Tisa Sans Pro Medium.48285a8343d3d3e19c06.ttf",
+    "static/media/Tisa Sans Pro Light.ttf": "/portfolio/static/media/Tisa Sans Pro Light.77765de353a76f48e13d.ttf",
+    "static/media/Tisa Sans Pro Regular.ttf": "/portfolio/static/media/Tisa Sans Pro Regular.5d0c5c144ae76afde4a9.ttf",
+    "static/media/saurabh.jpeg": "/portfolio/static/media/saurabh.f631ac5890086624fe0b.jpeg",
+    "index.html": "/portfolio/index.html",
+    "main.40bd8fc5.css.map": "/portfolio/static/css/main.40bd8fc5.css.map",
+    "main.e486b580.js.map": "/portfolio/static/js/main.e486b580.js.map",
+    "787.1ed0c42c.chunk.js.map": "/portfolio/static/js/787.1ed0c42c.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.40bd8fc5.css",
+    "static/js/main.e486b580.js"
+  ]
+}
