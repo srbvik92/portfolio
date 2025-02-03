@@ -1,0 +1,121 @@
+/* Global Styles */
+body {
+    font-family: "Tisa Sans Pro", sans-serif; /* Apply Tisa Sans Pro globally */
+    margin: 0;
+    padding: 0;
+    background-color: #d1d1d1; /* Optional background for aesthetics */
+    color: #333; /* Default font color */
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Tisa Sans Pro", sans-serif; /* Optional for headings */
+    margin: 0;
+}
+
+p {
+    font-family: "Tisa Sans Pro", sans-serif; /* For paragraphs */
+    margin: 0;
+}
+
+/* Keyframes */
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeOut {
+    to {
+        opacity: 1;
+    }
+}
+
+/* Font Faces */
+@font-face {
+    font-family: "Tisa Sans Pro";
+    src: url("./fonts/Tisa Sans Pro Regular.ttf") format("truetype");
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Tisa Sans Pro";
+    src: url("./fonts/Tisa Sans Pro Italic.ttf") format("truetype");
+    font-weight: 400;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Tisa Sans Pro";
+    src: url("./fonts/Tisa Sans Pro Light.ttf") format("truetype");
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Tisa Sans Pro";
+    src: url("./fonts/Tisa Sans Pro Light Italic.ttf") format("truetype");
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Tisa Sans Pro";
+    src: url("./fonts/Tisa Sans Pro Medium.ttf") format("truetype");
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Tisa Sans Pro";
+    src: url("./fonts/Tisa Sans Pro Medium Italic.ttf") format("truetype");
+    font-weight: 500;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Tisa Sans Pro";
+    src: url("./fonts/Tisa Sans Pro Bold.ttf") format("truetype");
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Tisa Sans Pro";
+    src: url("./fonts/Tisa Sans Pro Bold Italic.ttf") format("truetype");
+    font-weight: 700;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Tisa Sans Pro";
+    src: url("./fonts/Tisa Sans Pro ExtraBold.ttf") format("truetype");
+    font-weight: 800;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Tisa Sans Pro";
+    src: url("./fonts/Tisa Sans Pro ExtraBold Italic.ttf") format("truetype");
+    font-weight: 800;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Tisa Sans Pro";
+    src: url("./fonts/Tisa Sans Pro Black.ttf") format("truetype");
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Tisa Sans Pro";
+    src: url("./fonts/Tisa Sans Pro Black Italic.ttf") format("truetype");
+    font-weight: 900;
+    font-style: italic;
+}
