@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.40bd8fc5.css",
-    "main.js": "/portfolio/static/js/main.0a8b5d81.js",
+    "main.js": "/portfolio/static/js/main.b07dc9b4.js",
     "static/js/787.1ed0c42c.chunk.js": "/portfolio/static/js/787.1ed0c42c.chunk.js",
     "static/media/Tisa Sans Pro Light Italic.ttf": "/portfolio/static/media/Tisa Sans Pro Light Italic.b05edb7e61358c850fc8.ttf",
     "static/media/Tisa Sans Pro Black.ttf": "/portfolio/static/media/Tisa Sans Pro Black.a1b1b93160aa91d8798c.ttf",
@@ -18,11 +18,11 @@
     "static/media/saurabh.jpeg": "/portfolio/static/media/saurabh.f631ac5890086624fe0b.jpeg",
     "index.html": "/portfolio/index.html",
     "main.40bd8fc5.css.map": "/portfolio/static/css/main.40bd8fc5.css.map",
-    "main.0a8b5d81.js.map": "/portfolio/static/js/main.0a8b5d81.js.map",
+    "main.b07dc9b4.js.map": "/portfolio/static/js/main.b07dc9b4.js.map",
     "787.1ed0c42c.chunk.js.map": "/portfolio/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.40bd8fc5.css",
-    "static/js/main.0a8b5d81.js"
+    "static/js/main.b07dc9b4.js"
   ]
 }
