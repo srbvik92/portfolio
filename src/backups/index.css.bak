@@ -1,26 +1,10 @@
+/* Global Styles */
 body {
-    font-family: "Tisa Sans Pro", sans-serif;
+    font-family: "Tisa Sans Pro", sans-serif; /* Apply Tisa Sans Pro globally */
     margin: 0;
     padding: 0;
-    color: #1f2933;
-    background-color: #f5efe6;
-}
-
-* {
-    box-sizing: border-box;
-}
-
-html {
-    scroll-behavior: smooth;
-}
-
-#root {
-    min-height: 100vh;
-}
-
-a {
-    color: inherit;
-    text-decoration: none;
+    background-color: #d1d1d1; /* Optional background for aesthetics */
+    color: #333; /* Default font color */
 }
 
 h1,
@@ -28,82 +12,30 @@ h2,
 h3,
 h4,
 h5,
-h6,
-p {
+h6 {
+    font-family: "Tisa Sans Pro", sans-serif; /* Optional for headings */
     margin: 0;
 }
 
-::selection {
-    background: rgba(15, 76, 92, 0.16);
+p {
+    font-family: "Tisa Sans Pro", sans-serif; /* For paragraphs */
+    margin: 0;
 }
 
-@keyframes fadeUp {
-    from {
-        opacity: 0;
-        transform: translateY(28px);
-    }
-
+/* Keyframes */
+@keyframes fadeIn {
     to {
         opacity: 1;
-        transform: translateY(0);
     }
 }
 
-@keyframes floatGlow {
-    0%,
-    100% {
-        transform: translate3d(0, 0, 0);
-    }
-
-    50% {
-        transform: translate3d(0, -10px, 0);
+@keyframes fadeOut {
+    to {
+        opacity: 1;
     }
 }
 
-.reveal-up {
-    opacity: 0;
-    animation: fadeUp 0.8s ease forwards;
-}
-
-.reveal-delay-1 {
-    animation-delay: 0.08s;
-}
-
-.reveal-delay-2 {
-    animation-delay: 0.16s;
-}
-
-.reveal-delay-3 {
-    animation-delay: 0.24s;
-}
-
-.float-glow {
-    animation: floatGlow 6s ease-in-out infinite;
-}
-
-.surface-hover {
-    transition: transform 180ms ease, box-shadow 180ms ease, border-color 180ms ease;
-}
-
-.surface-hover:hover {
-    transform: translateY(-6px);
-}
-
-@media (prefers-reduced-motion: reduce) {
-    html {
-        scroll-behavior: auto;
-    }
-
-    .reveal-up,
-    .float-glow,
-    .surface-hover {
-        animation: none !important;
-        transition: none !important;
-        opacity: 1 !important;
-        transform: none !important;
-    }
-}
-
+/* Font Faces */
 @font-face {
     font-family: "Tisa Sans Pro";
     src: url("./fonts/Tisa Sans Pro Regular.ttf") format("truetype");

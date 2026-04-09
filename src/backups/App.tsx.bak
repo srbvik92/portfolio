@@ -1,9 +1,10 @@
 import React, { useState } from "react";
 import { HashRouter as Router, Routes, Route } from "react-router-dom";
 import { Box, CssBaseline, Toolbar } from "@mui/material";
-import { alpha, createTheme, ThemeProvider } from "@mui/material/styles";
+import { createTheme, ThemeProvider } from "@mui/material/styles";
 
 import TopNavigation from "./components/TopNavigation";
+// import SideNavigation from "./components/SideNavigation";
 import Landing from "./components/Landing";
 import AboutMe from "./components/AboutMe";
 import Skills from "./components/Skills";
@@ -12,98 +13,41 @@ import Contact from "./components/Contact";
 import FloatingSocialLinks from "./components/FloatingSocialLinks";
 
 const theme = createTheme({
-    palette: {
-        primary: {
-            main: "#0f4c5c",
-        },
-        secondary: {
-            main: "#c97b63",
-        },
-        background: {
-            default: "#f5efe6",
-            paper: "rgba(255, 255, 255, 0.8)",
-        },
-        text: {
-            primary: "#1f2933",
-            secondary: "#52606d",
-        },
-    },
     typography: {
         fontFamily: "'Tisa Sans Pro', sans-serif",
-        h1: {
-            fontWeight: 800,
-            letterSpacing: "-0.03em",
-        },
-        h2: {
-            fontWeight: 700,
-            letterSpacing: "-0.02em",
-        },
-        h3: {
-            fontWeight: 700,
-            letterSpacing: "-0.02em",
-        },
-        button: {
-            textTransform: "none",
-            fontWeight: 600,
-        },
-    },
-    shape: {
-        borderRadius: 18,
-    },
-    components: {
-        MuiCssBaseline: {
-            styleOverrides: {
-                body: {
-                    background:
-                        "radial-gradient(circle at top left, rgba(15, 76, 92, 0.10), transparent 32%), radial-gradient(circle at top right, rgba(201, 123, 99, 0.12), transparent 28%), linear-gradient(180deg, #f7f2ea 0%, #f2f5f7 100%)",
-                    minHeight: "100vh",
-                },
-            },
-        },
-        MuiPaper: {
-            styleOverrides: {
-                root: {
-                    backdropFilter: "blur(12px)",
-                    border: "1px solid rgba(15, 76, 92, 0.08)",
-                    boxShadow: "0 24px 60px rgba(31, 41, 51, 0.08)",
-                },
-            },
-        },
-        MuiButton: {
-            styleOverrides: {
-                root: {
-                    borderRadius: 999,
-                    paddingInline: 18,
-                },
-                containedPrimary: {
-                    boxShadow: "0 12px 24px rgba(15, 76, 92, 0.18)",
-                },
-                outlinedPrimary: {
-                    borderColor: alpha("#0f4c5c", 0.28),
-                },
-            },
-        },
     },
 });
 
 const App: React.FC = () => {
-    const [drawerOpen] = useState(false);
+    const [drawerOpen, setDrawerOpen] = useState(false);
     const drawerWidth = 240;
+    const toggleDrawer = () => {
+        setDrawerOpen(!drawerOpen);
+    };
 
     return (
         <ThemeProvider theme={theme}>
             <Router>
-                <Box sx={{ display: "flex", minHeight: "100vh" }}>
+                <Box sx={{ display: "flex" }}>
                     <CssBaseline />
                     <TopNavigation />
+                    {/* <SideNavigation
+            drawerOpen={drawerOpen}
+            toggleDrawer={toggleDrawer}
+            drawerWidth={drawerWidth}
+          /> */}
                     <Box
                         component="main"
                         sx={{
                             flexGrow: 1,
-                            px: { xs: 2, md: 3 },
-                            pb: 6,
+                            p: 3,
                             width: `calc(100% - ${drawerOpen ? drawerWidth : 0}px)`,
                             marginLeft: `${drawerOpen ? drawerWidth : 0}px`,
+                            transition: (theme) =>
+                                theme.transitions.create(["margin", "width"], {
+                                    easing: theme.transitions.easing.sharp,
+                                    duration: theme.transitions.duration.enteringScreen,
+                                }),
                         }}
                     >
                         <Toolbar />

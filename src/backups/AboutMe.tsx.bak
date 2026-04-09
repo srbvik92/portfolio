@@ -1,0 +1,125 @@
+import React from "react";
+import { Typography, Button, Container, Paper } from "@mui/material";
+import { PersonOutline } from "@mui/icons-material"; // Importing icon
+
+const AboutMe: React.FC = () => {
+    return (
+        <Container
+            component="main"
+            maxWidth="md"
+        >
+            {/* About Me Section */}
+            <Paper
+                elevation={3}
+                style={{ padding: "20px", marginTop: "20px", marginBottom: "20px" }}
+            >
+                <Typography
+                    variant="h4"
+                    align="center"
+                    gutterBottom
+                >
+                    Professional Summary
+                </Typography>
+
+                <Typography
+                    variant="body1"
+                    paragraph
+                >
+                    My journey into the world of software engineering began with my undergraduate studies at <b>NIT Raipur</b>, where I developed a strong foundation in Computer Science. Eager to
+                    expand my knowledge, I pursued my <b>Master’s in Computer Science</b> at <b>the University of Maryland, Baltimore County (UMBC)</b>, specializing in areas like Machine Learning,
+                    Algorithms, and Full Stack Development.
+                </Typography>
+
+                <Typography
+                    variant="body1"
+                    paragraph
+                >
+                    In 2022, I took a pivotal step in my career by joining <b>Miller Construction Services Inc.</b> as a Software Engineer (Full Stack Development). Initially, I contributed as an
+                    intern, but my role quickly evolved into a full-time position where I now serve as the <b>lead engineer</b> for our flagship web application. My responsibilities span across
+                    <b>architecting scalable solutions, optimizing database performance, and leading full-stack development efforts</b> using a{" "}
+                    <b>modified MERN stack (MySQL, Express.js, React.js, and Node.js).</b>
+                </Typography>
+
+                <Typography
+                    variant="body1"
+                    paragraph
+                >
+                    My expertise extends across multiple programming languages and technologies, including <b>Java, JavaScript, TypeScript, Python, PHP, and C++</b>, enabling me to adapt to diverse
+                    challenges. With a passion for problem-solving and system design, I strive to build robust, efficient, and scalable software solutions.
+                </Typography>
+            </Paper>
+
+            {/* Personal Journey Section */}
+            <Paper
+                elevation={3}
+                style={{ padding: "20px", marginTop: "20px", marginBottom: "20px" }}
+            >
+                <Typography
+                    variant="h4"
+                    align="center"
+                    gutterBottom
+                >
+                    My Personal Journey
+                </Typography>
+
+                <Typography
+                    variant="body1"
+                    paragraph
+                >
+                    My passion for computer science ignited during my undergraduate years at <b>NIT Raipur</b>, one of India's esteemed NITs. Completing my degree in 2014, I was brimming with the
+                    foundational knowledge and eagerness to apply my skills in the real world.
+                </Typography>
+
+                <Typography
+                    variant="body1"
+                    paragraph
+                >
+                    Taking a slightly unconventional path, I joined <b>Canara Bank</b>, a reputable Nationalized Bank under the Government of India. Over the next two years and four months, my tenure
+                    at the bank was instrumental in shaping my professional outlook. It taught me discipline, the value of service, and gave me a distinct perspective on how technology could be
+                    employed in various sectors. However, the allure of computer science, especially the domains of Machine Learning and Full Stack Development, was too compelling to resist.
+                </Typography>
+
+                <Typography
+                    variant="body1"
+                    paragraph
+                >
+                    Realizing that my heart truly belonged to the world of technology, I made the pivotal decision to further my education. In 2021, I embarked on a transformative journey at
+                    <b>the University of Maryland, Baltimore County (UMBC)</b> to pursue my master's degree. This academic venture was both challenging and enlightening, providing me with advanced
+                    skills and insights into cutting-edge technological advancements.
+                </Typography>
+
+                <Typography
+                    variant="body1"
+                    paragraph
+                >
+                    In 2022, while still a student, fortune favored me with an incredible opportunity to intern as a Software Engineer (Full Stack Development) at{" "}
+                    <b>Miller Construction Services Inc.</b>
+                    This hands-on experience during the Fall '22 and Spring '23 semesters enriched my academic learnings, and I seamlessly merged theory with practical application. The synergy was
+                    palpable, and recognizing my potential, Miller Construction Services offered me a full-time position. I enthusiastically commenced my professional journey with them in August 2023.
+                </Typography>
+
+                <Typography
+                    variant="body1"
+                    paragraph
+                >
+                    Today, as I look back, every decision, every twist, and turn in my journey has been a stepping stone, shaping me into the dedicated and knowledgeable Full Stack Developer I am. I'm
+                    excited about the future and the numerous technological challenges it promises, ready to tackle them head-on.
+                </Typography>
+            </Paper>
+
+            {/* Let's Connect Button at the Bottom with Icon */}
+            <Container style={{ textAlign: "center", marginTop: "20px", marginBottom: "20px" }}>
+                <Button
+                    variant="contained"
+                    color="primary"
+                    href="#contact"
+                    startIcon={<PersonOutline />} // Adding the icon
+                >
+                    Let's Connect!
+                </Button>
+            </Container>
+        </Container>
+    );
+};
+
+export default AboutMe;

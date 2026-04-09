@@ -1,0 +1,98 @@
+import React from "react";
+import { Container, Typography, Paper, TextField, Button, Grid, Link } from "@mui/material";
+import { Email, LinkedIn, GitHub, Phone } from "@mui/icons-material";
+
+const Contact: React.FC = () => {
+    return (
+        <Container
+            component="main"
+            maxWidth="sm"
+            style={{ marginTop: "40px", marginBottom: "40px" }}
+        >
+            <Paper
+                elevation={3}
+                style={{ padding: "30px", textAlign: "center" }}
+            >
+                <Typography
+                    variant="h4"
+                    gutterBottom
+                >
+                    Get in Touch
+                </Typography>
+
+                <Typography
+                    variant="body1"
+                    paragraph
+                >
+                    Whether you have a question, a project idea, or just want to connect, feel free to reach out!
+                </Typography>
+
+                {/* Contact Details */}
+                <Grid
+                    container
+                    spacing={2}
+                    justifyContent="center"
+                >
+                    <Grid
+                        item
+                        xs={12}
+                    >
+                        <Link
+                            href="mailto:saurabd1@umbc.edu"
+                            underline="none"
+                            color="inherit"
+                        >
+                            <Button
+                                variant="outlined"
+                                startIcon={<Email />}
+                                fullWidth
+                            >
+                                saurabd1@umbc.edu
+                            </Button>
+                        </Link>
+                    </Grid>
+                    <Grid
+                        item
+                        xs={12}
+                    >
+                        <Link
+                            href="https://linkedin.com/in/saurabd"
+                            target="_blank"
+                            underline="none"
+                            color="inherit"
+                        >
+                            <Button
+                                variant="outlined"
+                                startIcon={<LinkedIn />}
+                                fullWidth
+                            >
+                                linkedin.com/in/saurabd
+                            </Button>
+                        </Link>
+                    </Grid>
+                    <Grid
+                        item
+                        xs={12}
+                    >
+                        <Link
+                            href="https://github.com/srbvik92"
+                            target="_blank"
+                            underline="none"
+                            color="inherit"
+                        >
+                            <Button
+                                variant="outlined"
+                                startIcon={<GitHub />}
+                                fullWidth
+                            >
+                                github.com/srbvik92
+                            </Button>
+                        </Link>
+                    </Grid>
+                </Grid>
+            </Paper>
+        </Container>
+    );
+};
+
+export default Contact;

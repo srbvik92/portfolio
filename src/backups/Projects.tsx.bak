@@ -1,0 +1,207 @@
+import React from "react";
+import { Box, Chip, Paper, Stack, Typography } from "@mui/material";
+
+interface ProjectItem {
+    title: string;
+    date: string;
+    description: string;
+    technologies: string;
+    highlights?: string[];
+}
+
+const featuredProjects: ProjectItem[] = [
+    {
+        title: "Knowledge AI",
+        date: "2026",
+        description:
+            "Built an AI-powered personal knowledge platform where users can save notes, tag and search them, generate summaries, and ask grounded questions across their saved knowledge with note citations.",
+        technologies:
+            "React, TypeScript, Vite, Material UI, Node.js, Express, MySQL, Prisma, Redis, BullMQ, OpenAI/OpenRouter, k6",
+        highlights: [
+            "Implemented JWT-based authentication, protected frontend routes, and ownership-scoped notes CRUD APIs.",
+            "Added async AI summarization, note chunking, embeddings, and semantic retrieval over saved notes.",
+            "Used Redis for BullMQ workers, caching, rate limiting, queue metrics, and endpoint timing metrics.",
+            "Created synthetic seed tooling, queue storm scripts, mock LLM mode, and k6 experiments for backend performance analysis.",
+        ],
+    },
+    {
+        title: "Implementation of Neural Arc Standard Dependency Parser",
+        date: "Fall 2022",
+        description:
+            "Designed a machine learning-based parser predicting actions with 76-87% accuracy for different languages.",
+        technologies: "Python, PyTorch, pandas, NumPy",
+    },
+    {
+        title: "Sentiment Analysis of Tweets Using Machine Learning Model",
+        date: "Fall 2022",
+        description:
+            "Achieved an 81% accuracy in sentiment classification using advanced machine learning models.",
+        technologies: "Python, TensorFlow, pandas, NumPy, scikit-learn",
+    },
+    {
+        title: "Classifying Emails as Spam or Ham",
+        date: "Fall 2022",
+        description: "Developed a model achieving 96% accuracy in classifying emails as spam or ham.",
+        technologies: "Python, TensorFlow, pandas, NumPy, scikit-learn",
+    },
+    {
+        title: "Credit Card Approval Prediction",
+        date: "Spring 2022",
+        description: "Created a model that can predict credit card approval with an accuracy of 89%.",
+        technologies: "Python, pandas, NumPy, scikit-learn, Matplotlib",
+    },
+    {
+        title: "Analysis of GPU Performance",
+        date: "Spring 2022",
+        description:
+            "Analyzed TensorFlow performance on different Nvidia GPUs by running TensorFlow Profiler.",
+        technologies: "Python, TensorFlow-GPU, TensorFlow Profiler",
+    },
+    {
+        title: "Fatcent (Machine Learning Model for Stock Price Prediction)",
+        date: "Fall 2021",
+        description:
+            "Developed a stock prediction model whose predictions closely followed the actual stock price graph and supported investment analysis.",
+        technologies: "Python, TensorFlow, NumPy, Matplotlib",
+    },
+    {
+        title: "Computer Graphics Coursework Projects",
+        date: "Fall 2021",
+        description:
+            "Completed advanced projects on ray tracing, shading, rasterization, mesh fairing, flock simulation, and seam carving.",
+        technologies: "C++",
+    },
+];
+
+const Projects: React.FC = () => {
+    return (
+        <Box
+            id="projects"
+            display="flex"
+            flexDirection="column"
+            alignItems="center"
+            paddingY={6}
+            sx={{ backgroundColor: "#f9f9f9" }}
+        >
+            <Typography
+                variant="h3"
+                align="center"
+                gutterBottom
+                sx={{
+                    fontWeight: 700,
+                    color: "#2c3e50",
+                    marginBottom: "1rem",
+                    borderBottom: "2px solid #3f51b5",
+                    display: "inline-block",
+                    paddingBottom: "10px",
+                }}
+            >
+                Projects
+            </Typography>
+
+            <Typography
+                variant="body1"
+                align="center"
+                sx={{
+                    maxWidth: "900px",
+                    color: "#555",
+                    marginBottom: 4,
+                    paddingX: 2,
+                    lineHeight: 1.7,
+                }}
+            >
+                A mix of production-style full-stack work and graduate coursework projects focused on machine learning, systems, and applied software engineering.
+            </Typography>
+
+            <Box
+                maxWidth="900px"
+                width="100%"
+                display="flex"
+                flexDirection="column"
+                gap={4}
+                paddingX={2}
+            >
+                {featuredProjects.map((project) => (
+                    <Paper
+                        key={project.title}
+                        elevation={3}
+                        sx={{
+                            padding: 3,
+                            borderRadius: "10px",
+                            backgroundColor: "white",
+                            boxShadow: "0px 4px 10px rgba(0, 0, 0, 0.08)",
+                        }}
+                    >
+                        <Stack
+                            direction={{ xs: "column", sm: "row" }}
+                            justifyContent="space-between"
+                            alignItems={{ xs: "flex-start", sm: "center" }}
+                            spacing={1}
+                            sx={{ marginBottom: 1.5 }}
+                        >
+                            <Typography
+                                variant="h5"
+                                sx={{
+                                    fontWeight: 600,
+                                    color: "#3f51b5",
+                                }}
+                            >
+                                {project.title}
+                            </Typography>
+                            <Chip
+                                label={project.date}
+                                size="small"
+                                sx={{
+                                    backgroundColor: "#e8eaf6",
+                                    color: "#3949ab",
+                                    fontWeight: 600,
+                                }}
+                            />
+                        </Stack>
+
+                        <Typography
+                            variant="body1"
+                            sx={{
+                                color: "#444",
+                                marginBottom: 1.5,
+                                lineHeight: 1.7,
+                            }}
+                        >
+                            {project.description}
+                        </Typography>
+
+                        {project.highlights && (
+                            <Box sx={{ marginBottom: 1.5 }}>
+                                {project.highlights.map((highlight) => (
+                                    <Typography
+                                        key={highlight}
+                                        variant="body2"
+                                        sx={{
+                                            color: "#555",
+                                            lineHeight: 1.7,
+                                            marginBottom: 0.75,
+                                        }}
+                                    >
+                                        • {highlight}
+                                    </Typography>
+                                ))}
+                            </Box>
+                        )}
+
+                        <Typography
+                            variant="body2"
+                            sx={{
+                                color: "#555",
+                                fontWeight: 500,
+                            }}
+                        >
+                            <strong>Technologies used:</strong> {project.technologies}
+                        </Typography>
+                    </Paper>
+                ))}
+            </Box>
+        </Box>
+    );
+};
+
+export default Projects;
